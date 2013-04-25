@@ -1,0 +1,23 @@
+CIwResGroup
+{
+	name "sounds"
+
+	"./sounds/contact.wav"
+
+	CIwSoundSpec
+	{
+		name		"contact"
+		data		"contact"
+		vol 		0.9
+		loop		false
+	}
+
+	CIwSoundGroup
+	{
+		name		"sound_effects"
+		maxPolyphony 	8
+		killOldest	true
+		addSpec		"contact"
+	}
+
+}

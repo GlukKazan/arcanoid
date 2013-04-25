@@ -1,0 +1,20 @@
+includepath h
+includepath source
+
+files
+{
+    (h)
+    yaml.h
+    config.h
+
+    (source)
+    yaml_private.h
+    api.c
+    dumper.c
+    emitter.c
+    loader.c
+    parser.c
+    reader.c
+    scanner.c
+    writer.c
+}

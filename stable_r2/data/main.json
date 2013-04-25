@@ -1,0 +1,163 @@
+{ board:  { width: 320,
+            background: space,
+            start: level_1,
+            backgrounds: { space: game/backgrounds/Spaceship.png,
+                           alien_1: game/backgrounds/alienship_1.png,
+                           alien_2: game/backgrounds/alienship_2.png,
+                           jungle_1: game/backgrounds/Jungle_1.png,
+                           jungle_2: game/backgrounds/Jungle_2.png,
+                           desert: game/backgrounds/desert.png
+                         }
+          },
+  gifts:  { bomb:        { good: Y,
+                           bomb: Y,
+                           image: game/bonus/3/bomb.png
+                         },
+            fire:        { good: Y,
+                           fire: Y,
+                           image: game/bonus/3/fire_ball.png
+                         },
+            gun:         { good: Y,
+                           gun: Y,
+                           image: game/bonus/3/gun_platform.png
+                         },
+            iron:        { good: Y,
+                           iron: Y,
+                           image: game/bonus/3/iron_ball.png
+                         },
+            life:        { good: Y,
+                           life: Y,
+                           image: game/bonus/3/life.png
+                         },
+            small:       { good: N,
+                           small: Y,
+                           image: game/bonus/3/small_platform.png
+                         },
+            big:         { good: Y,
+                           big: Y,
+                           image: game/bonus/3/x2_platform.png
+                         },
+            fork:        { good: Y,
+                           fork: Y,
+                           image: game/bonus/3/double_ball.png
+                         },
+            stick:       { good: Y,
+                           stick: Y,
+                           image: game/bonus/3/stick.png
+                         }
+          },
+  bricks: { main:        { width: 40,
+                           height: 20,
+                           image: game/bricks/main.png
+                         },
+            double_1:    { width: 40,
+                           height: 20,
+                           next: double_2,
+                           image: game/bricks/double_life.png
+                         },
+            double_2:    { width: 40,
+                           height: 20,
+                           image: game/bricks/double_life_2.png
+                         },
+            explosion:   { width: 40,
+                           height: 20,
+                           explosion: Y,
+                           image: game/bricks/explosion.png
+                         },
+            gift:        { width: 40,
+                           height: 20,
+                           good: 80,
+                           bad: 20,
+                           image: game/bricks/gift.png
+                         }
+          },
+  balls: { main:         { default: Y,
+                           radius: 8,
+                           top: 4,
+                           bottom: 4,
+                           left: 4,
+                           right: 4,
+                           image: game/ball/main.png
+                         },
+           bomb:         { radius: 10,
+                           bomb: Y,
+                           image: game/ball/bomb_ball.png
+                         },
+           iron:         { radius: 8,
+                           weight: 2,
+                           image: game/ball/iron_ball.png
+                         },
+           fire:         { radius: 10,
+                           top: 5,
+                           bottom: 5,
+                           left: 5,
+                           right: 5,
+                           fire: Y,
+                           weight: 2,
+                           image: game/ball/fire_ball.png
+                         }
+         },
+  platforms: { main:    { default: Y,
+                          width: 80,
+                          height: 10,
+                          top: 30,
+                          prev: x0_5,
+                          next: x1_5,
+                          image: game/platform/main.png
+                        },
+               gun:     { width: 80,
+                          height: 10,
+                          top: 50,
+                          fire: Y,
+                          next: x1_5,
+                          bullet: game/platform/laser.png,
+                          image: game/platform/platform_gun.png
+                        },
+               sticky:  { width: 80,
+                          height: 10,
+                          top: 30,
+                          next: x1_5,
+                          sticky: Y,
+                          image: game/platform/stick.png
+                        },
+               x0_5:    { width: 40,
+                          height: 10,
+                          top: 30,
+                          next: main,
+                          image: game/platform/main.png
+                        },
+               x1_5:    { width: 120,
+                          height: 10,
+                          top: 30,
+                          prev: main,
+                          next: x2,
+                          image: game/platform/x1_5.png
+                        },
+               x2:      { width: 160,
+                          height: 10,
+                          top: 30,
+                          prev: x1_5,
+                          image: game/platform/x2.png
+                        } 
+             },
+  levels: { level_1:    { file: level_1.json,
+                          next: level_1
+                        },
+          },
+  sounds: [ { id: 1,
+              name: contact
+            }
+          ],
+  langs: [ { id: 16,
+             path: ru,
+             default: Y
+           },
+           { id: 1,
+             path: en
+           }
+         ],
+  devices: [ { default: Y,
+               path: 1280
+             }
+           ]
+}

@@ -1,0 +1,139 @@
+#!/usr/bin/env mkb
+options
+{
+	module_path="$MARMALADE_ROOT/examples"
+	module_path="../yaml"
+	module_path="../box2d"
+}
+
+subprojects
+{
+	iwgx
+	yaml
+	box2d
+	iwresmanager
+	SoundEngine
+}
+
+includepath
+{
+	./source/Main
+	./source/Model
+}
+files
+{
+	[Main]
+	(source/Main)
+	Main.cpp
+	Main.h
+	Quads.cpp
+	Quads.h
+	TouchPad.cpp
+	TouchPad.h
+	Desktop.cpp
+	Desktop.h
+	IO.cpp
+	IO.h
+	World.cpp
+	World.h       
+	ResourceManager.cpp
+	ResourceManager.h
+	IObject.h
+	CommonObject.cpp
+	CommonObject.h
+	DataLoader.cpp
+	DataLoader.h
+	Locale.cpp
+	Locale.h
+	StringPool.cpp
+	StringPool.h
+
+	[Model]
+	(source/Model)
+	Box2DItem.cpp
+	Box2DItem.h
+	Board.cpp
+	Board.h
+	Bricks.cpp
+	Bricks.h
+	Balls.cpp
+	Balls.h
+	Ball.cpp
+	Ball.h
+	Handle.cpp
+	Handle.h
+
+	[Data]
+	(data)
+	sounds.group
+}
+
+assets
+{
+	(data)
+	main.json
+	level_1.json
+	images/1280/game/backgrounds/alienship_1.png
+	images/1280/game/backgrounds/alienship_2.png
+	images/1280/game/backgrounds/desert.png
+	images/1280/game/backgrounds/Jungle_1.png
+	images/1280/game/backgrounds/Jungle_2.png
+	images/1280/game/backgrounds/Spaceship.png
+	images/1280/game/ball/bomb_ball.png
+	images/1280/game/ball/fire_ball.png
+	images/1280/game/ball/iron_ball.png
+	images/1280/game/ball/main.png
+	images/1280/game/bonus/1/bomb.png
+	images/1280/game/bonus/1/fire_ball.png
+	images/1280/game/bonus/1/gun_platform.png
+	images/1280/game/bonus/1/iron_ball.png
+	images/1280/game/bonus/1/life.png
+	images/1280/game/bonus/1/small_platform.png
+	images/1280/game/bonus/1/stick.png
+	images/1280/game/bonus/1/double_ball.png
+	images/1280/game/bonus/1/x2_platform.png
+	images/1280/game/bonus/2/bomb.png
+	images/1280/game/bonus/2/fire_ball.png
+	images/1280/game/bonus/2/gun_platform.png
+	images/1280/game/bonus/2/iron_ball.png
+	images/1280/game/bonus/2/life.png
+	images/1280/game/bonus/2/small_platform.png
+	images/1280/game/bonus/2/stick.png
+	images/1280/game/bonus/2/double_ball.png
+	images/1280/game/bonus/2/x2_platform.png
+	images/1280/game/bonus/3/bomb.png
+	images/1280/game/bonus/3/fire_ball.png
+	images/1280/game/bonus/3/gun_platform.png
+	images/1280/game/bonus/3/iron_ball.png
+	images/1280/game/bonus/3/life.png
+	images/1280/game/bonus/3/small_platform.png
+	images/1280/game/bonus/3/stick.png
+	images/1280/game/bonus/3/double_ball.png
+	images/1280/game/bonus/3/x2_platform.png
+	images/1280/game/bonus/4/bomb.png
+	images/1280/game/bonus/4/fire_ball.png
+	images/1280/game/bonus/4/gun_platform.png
+	images/1280/game/bonus/4/iron_ball.png
+	images/1280/game/bonus/4/life.png
+	images/1280/game/bonus/4/small_platform.png
+	images/1280/game/bonus/4/stick.png
+	images/1280/game/bonus/4/double_ball.png
+	images/1280/game/bonus/4/x2_platform.png
+	images/1280/game/bricks/double_life.png
+	images/1280/game/bricks/double_life_2.png
+	images/1280/game/bricks/explosion.png
+	images/1280/game/bricks/gift.png
+	images/1280/game/bricks/main.png
+	images/1280/game/HUD/BG_HUD.png
+	images/1280/game/HUD/life.png
+	images/1280/game/platform/laser.png
+	images/1280/game/platform/main.png
+	images/1280/game/platform/platform_gun.png
+	images/1280/game/platform/small.png
+	images/1280/game/platform/stick.png
+	images/1280/game/platform/x1_5.png
+	images/1280/game/platform/x2.png
+
+	(data-ram/data-gles1, data/data-gles1)
+	sounds.group.bin
+}

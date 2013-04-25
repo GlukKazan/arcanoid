@@ -1,0 +1,82 @@
+{ bricks: [{ type: double_1,
+             x: 70,
+             y: 80
+           },
+           { type: gift,
+             x: 114,
+             y: 80
+           },
+           { type: double_1,
+             x: 158,
+             y: 80
+           },
+           { type: gift,
+             x: 202,
+             y: 80
+           },
+           { type: double_1,
+             x: 246,
+             y: 80
+           },
+           { type: gift,
+             x: 70,
+             y: 104
+           },
+           { type: double_1,
+             x: 114,
+             y: 104
+           },
+           { type: gift,
+             x: 158,
+             y: 104
+           },
+           { type: double_1,
+             x: 202,
+             y: 104
+           },
+           { type: gift,
+             x: 246,
+             y: 104
+           },
+           { type: double_1,
+             x: 70,
+             y: 128
+           },
+           { type: gift,
+             x: 114,
+             y: 128
+           },
+           { type: double_1,
+             x: 158,
+             y: 128
+           },
+           { type: gift,
+             x: 202,
+             y: 128
+           },
+           { type: double_1,
+             x: 246,
+             y: 128
+           },
+           { type: gift,
+             x: 70,
+             y: 152
+           },
+           { type: double_1,
+             x: 114,
+             y: 152
+           },
+           { type: gift,
+             x: 158,
+             y: 152
+           },
+           { type: double_1,
+             x: 202,
+             y: 152
+           },
+           { type: gift,
+             x: 246,
+             y: 152
+           }
+          ]
+}

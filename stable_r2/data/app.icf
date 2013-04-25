@@ -1,0 +1,13 @@
+[GX]
+DataCacheSize=64000
+NumTPages=20
+
+[S3E]
+SysGlesVersion=1
+DispFixRot=FixedPortrait
+MemSize=70000000
+MemSizeDebug=70000000
+DataDirIsRAM=1
+
+[SOUND]
+MaxChannels=16
